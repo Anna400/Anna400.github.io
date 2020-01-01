@@ -357,7 +357,7 @@
  $email = urldecode($email);
  $fio = trim($fio);
  $email = trim($email);
- if (mail("svz16012009@gmail.com", "Заявка с сайта", "ФИО:".$fio.". E-mail: ".$email ,"From: info@github.com \r\n")){
+ if (mail("svz16012009@gmail.com", "Заявка с сайта", "ФИО:".$fio.". E-mail: ".$email ,"From: noreply@github.com \r\n")){
  echo "Сообщение успешно отправлено";
  } else {
  echo "При отправке сообщения возникли ошибки";
