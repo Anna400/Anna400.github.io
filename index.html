@@ -326,18 +326,18 @@
 					if(!isset($_POST['fio']) and !isset($_POST['email'])){
  					?>
 					
-					<form>
+					<form method="post">
   						<div class="form-row">
     						<div class="col-6">
-      							<input type="text" class="form-control" placeholder="Ваше ИМЯ">
+      							<input type="text" name="fio" class="form-control" placeholder="Ваше ИМЯ" required>
     						</div>
     						<div class="col-6">
-      							<input type="email" class="form-control" id="inputEmail1" placeholder="Ваш Email">
+      							<input type="email" name="email" class="form-control" id="inputEmail1" placeholder="Ваш Email" required>
     						</div>
   						</div>
   						<div class="form-row">
     						<div class="col-12">
-      							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write Massagel"></textarea>
+      							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write Massagel" required></textarea>
     						</div>
   						</div>
   						<div class="form-row">
