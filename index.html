@@ -321,12 +321,7 @@
   
 					</div>
 					
-					<?php
-					//проверяем, существуют ли переменные в массиве POST
-					if(!isset($_POST['fio']) and !isset($_POST['email'])){
- 					?>
-					
-					<form method="post">
+					<form action="send.php" method="post">
   						<div class="form-row">
     						<div class="col-6">
       							<input type="text" name="fio" class="form-control" placeholder="Ваше ИМЯ" required>
@@ -346,25 +341,6 @@
   						</div>
   					</div>
 					</form>
-
-<?php
-} else {
- //показываем форму
- $fio = $_POST['fio'];
- $email = $_POST['email'];
- $fio = htmlspecialchars($fio);
- $email = htmlspecialchars($email);
- $fio = urldecode($fio);
- $email = urldecode($email);
- $fio = trim($fio);
- $email = trim($email);
- if (mail("svz16012009@gmail.com", "Заявка с сайта", "ФИО:".$fio.". E-mail: ".$email ,"From: info@github.ru \r\n")){
- echo "Сообщение успешно отправлено";
- } else {
- echo "При отправке сообщения возникли ошибки";
- }
-}
-?>
 					
 				</div>
 			</div>
