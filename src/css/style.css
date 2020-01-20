@@ -530,6 +530,10 @@ form .btn-light {
 
 /*md*/
 @media (max-width: 991.99px) {
+	.layout_project-body {
+		margin-top: 100px;
+	}
+
 	.pricing-card-title {
 		padding: 10px;
 	}
@@ -537,6 +541,10 @@ form .btn-light {
 
 /*sm*/
 @media (max-width: 767.99px) {
+	.layout_project-body {
+		margin-top: 50px;
+	}
+
 	.pricing-card-deck {
 		flex-direction: column;
 		justify-content: center;
@@ -563,6 +571,11 @@ form .btn-light {
 
 /*sx*/
 @media (max-width: 575.99px) {
+
+	.layout_project-body {
+		margin-top: 20px;
+	}
+
 	.down_bar {
 		display: none;
 	}
