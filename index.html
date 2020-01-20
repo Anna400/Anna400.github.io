@@ -113,9 +113,9 @@
   							</p>
 							<div class="collapse multi-collapse" id="multiCollapseExample2">
   								<div class="about-collapse">
-    								<img src="src/img/html-css_test.png" class="html-css_test">
-    								<img src="src/img/bootstrap_test.png" class="bootstrap_test">
-    								<img src="src/img/js-jquery_test.png" class="js-jquery_test">
+    								<img src="src/img/html-css_test.png" class="html-css_test" alt="картинка">
+    								<img src="src/img/bootstrap_test.png" class="bootstrap_test" alt="картинка">
+    								<img src="src/img/js-jquery_test.png" class="js-jquery_test" alt="картинка">
     								<img src="src/img/git_test.png" class="git_test">
   								</div>
 							</div>
@@ -161,7 +161,7 @@
 						<img src="src/img/services_icon.png" class="card-img-top" alt="...">
 						<div class="services-body">
 							<h5 class="services_me-title">Адаптивная верстка</h5>
-							<p class="services-text">Bootstrap<br>Flexbox<br>@media</p>
+							<p class="services-text">Bootstrap<br>@media</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-4 col-sx-12" style="height: 240px;">
@@ -240,8 +240,8 @@
       								<li>Адаптивная верстка<span class="pricing-muted">&ndash;</span></li>
       								<li>Кросс-браузерность<span class="pricing-muted">&#10004;</span></li>
       								<li>до 5 дней</li>
-      								<a href="https://anna1010-bit.github.io/portfolio/wp_lp.html" role="button" aria-pressed="true" class="btn btn-outline-dark">Пример</a>
       							</ul>
+      								<a href="https://anna1010-bit.github.io/portfolio/wp_lp.html" role="button" aria-pressed="true" class="btn btn-outline-dark">Пример</a>
     						</div>
   						</div>
   					</div>
@@ -255,8 +255,8 @@
       								<li>Адаптивная верстка<span class="pricing-muted">&#10004;</span></li>
       								<li>Кросс-браузерность<span class="pricing-muted">&#10004;</span></li>
       								<li>до 7 дней</li>
-      								<a href="https://anna1010-bit.github.io/portfolio/template.html" role="button" aria-pressed="true" class="btn btn-outline-dark">Пример</a>
       							</ul>
+      								<a href="https://anna1010-bit.github.io/portfolio/template.html" role="button" aria-pressed="true" class="btn btn-outline-dark">Пример</a>
       						</div>
   						</div>
   					</div>
@@ -270,8 +270,8 @@
       								<li>Адаптивная верстка<span class="pricing-muted">&ndash;</span>/<span class="pricing-muted">&#10004;</span></li>
       								<li>Кросс-браузерность<span class="pricing-muted">&ndash;</span>/<span class="pricing-muted">&#10004;</span></li>
       								<li>от 5 дней</li>
-      								<a href="https://anna1010-bit.github.io/portfolio/wp_lp.html" role="button" aria-pressed="true" class="btn btn-outline-dark">Пример</a>
       							</ul>
+      								<a href="https://anna1010-bit.github.io/portfolio/wp_lp.html" role="button" aria-pressed="true" class="btn btn-outline-dark">Пример</a>
     						</div>
   						</div>
 					</div>
@@ -294,7 +294,7 @@
 
 						<div class="col-md-4 col-sm-4 col-sx-12">
 							<div class="contact-logo-bg">
-								<img src="src/img/place_contact_logo.png" class="place_contact_logo">
+								<img src="src/img/place_contact_logo.png" class="place_contact_logo" alt="картинка">
 							</div>
 							<div class="contact-logo-body">
 								<p class="contact-logo-text">город Орск</p>
@@ -303,7 +303,7 @@
 
 						<div class="col-md-4 col-sm-4 col-sx-12">
 							<div class="contact-logo-bg">
-								<img src="src/img/phone_contact_logo.png" class="phone_contact_logo">
+								<img src="src/img/phone_contact_logo.png" class="phone_contact_logo" alt="картинка">
 							</div>
 							<div class="contact-logo-body">
 								<p class="contact-logo-text"><a href="tel:+79957746244">89957746244</a></p>
@@ -312,7 +312,7 @@
 
 						<div class="col-md-4 col-sm-4 col-sx-12">
 							<div class="contact-logo-bg">
-								<img src="src/img/mail_contact_logo.png" class="mail_contact_logo">
+								<img src="src/img/mail_contact_logo.png" class="mail_contact_logo" alt="картинка">
 							</div>
 							<div class="contact-logo-body">
 								<p class="contact-logo-text"><a href="mailto:svz16012009@gmail.com">svz16012009@gmail.com</a></p>
@@ -320,8 +320,8 @@
 						</div>
   
 					</div>
-					
-					<form>
+
+					<form action="send.php" method="post">
   						<div class="form-row">
     						<div class="col-6">
       							<input type="text" name="fio" class="form-control" placeholder="Ваше ИМЯ" required>
@@ -332,16 +332,17 @@
   						</div>
   						<div class="form-row">
     						<div class="col-12">
-      							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write Massagel" required></textarea>
+      							<textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write Massagel" required></textarea>
     						</div>
   						</div>
+						<div class="g-recaptcha" data-sitekey="p9957705"></div>
   						<div class="form-row">
   						<div class="col contact-form-btn">
   							<button type="submit" class="btn btn-light">Отправить</button>
   						</div>
-  						</div>
+  					</div>
 					</form>
-					
+
 				</div>
 			</div>
 		</section>
@@ -359,12 +360,12 @@
 	</footer>
 
 
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="src/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="src/js/bootstrap.bundle.min.js"></script>
-	<script type="text/javascript" src="src/js/main.js"></script>
+	<script src="src/js/bootstrap.min.js"></script>
+	<script src="src/js/bootstrap.bundle.min.js"></script>
+	<script src="src/js/main.js"></script>
 </body>
 </html>
